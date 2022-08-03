@@ -183,3 +183,7 @@ addressBookArray.splice(deleteContact);
 addressBookArray.forEach(function (addressBook) {
     console.log(addressBook);
 });
+
+console.log("Number of contacts in address book array are: ");
+let countContact = addressBookArray.length;
+console.log(countContact);
