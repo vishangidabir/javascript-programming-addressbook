@@ -172,3 +172,7 @@ try {
 } catch (e) {
     console.error(e);
 }
+
+console.log("Checking if contact with name 'Sanket' is present in array and if present printing it");
+let findContact = addressBookArray.find(findContact => findContact.firstName === 'Sanket');
+console.log(findContact);
