@@ -124,15 +124,21 @@ class AddressBook {
             ", emailId='" + this.emailId;
     }
 }
-let addressBook = new AddressBook("Vishangi", "Dabir", "Panvel", "Mumbai", "Maharashtra", 410206, 9874563210, "vishangid3001");
-console.log(addressBook.toString());
+let addressBook = new AddressBook("Vishangi", "Dabir", "Panvel", "Mumbai", "Maharashtra", 410230, 9874563210, "vishangi3001");
+let addressBook1 = new AddressBook("Sanket", "Thali", "Roha", "Raigad", "Maharashtra", 421210, 8897456123, "sankett1998");
+let addressBookArray = new Array();
+addressBookArray.push(addressBook);
+addressBookArray.push(addressBook1);
+addressBookArray.forEach(function(addressBook){
+console.log(addressBook);
+});
 try {
-    addressBook.setFirstName = "vish30";
+    addressBook.setFirstName = "vishu30";
 } catch (e) {
     console.error(e);
 }
 try {
-    addressBook.setLastName = "Dabir";
+    addressBook.setLastName = "dabir";
 } catch (e) {
     console.error(e);
 }
@@ -152,7 +158,7 @@ try {
     console.error(e);
 }
 try {
-    addressBook.setZipCode = "231224";
+    addressBook.setZipCode = "412025";
 } catch (e) {
     console.error(e);
 }
@@ -166,7 +172,3 @@ try {
 } catch (e) {
     console.error(e);
 }
-
-
-
-
